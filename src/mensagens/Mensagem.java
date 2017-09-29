@@ -7,6 +7,8 @@ package mensagens;
 public class Mensagem {
     
     public static void menu(){
+        System.out.println("-----------------------------------------");
+        System.out.println(" ");
         System.out.println("1 - Arad");
         System.out.println("2 - Bucharest");
         System.out.println("3 - Craiova");
@@ -27,10 +29,6 @@ public class Mensagem {
         System.out.println("18 - Urzicenti");
         System.out.println("19 - Vaslui");
         System.out.println("20 - Zerind");
+        System.out.print("Escolha: ");
     }
-    
-    public static void separador(){
-        System.out.println("-----------------------------------------");
-    }
-    
 }

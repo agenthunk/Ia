@@ -49,12 +49,29 @@ public class Pilha {
     }
     
     public static void main (String args[]){
-        Pilha pilha = new Pilha(5);
+        Pilha pilha = new Pilha(19); // Deixando uma posição a menos para testar a pilha vazia
         Mapa mapa = new Mapa();
         
         pilha.empilhar(mapa.getArad());
         pilha.empilhar(mapa.getBucharest());
         pilha.empilhar(mapa.getCraiova());
+        pilha.empilhar(mapa.getDobreta());
+        pilha.empilhar(mapa.getEforie());
+        pilha.empilhar(mapa.getFagaras());
+        pilha.empilhar(mapa.getGiurgiu());
+        pilha.empilhar(mapa.getHirsova());
+        pilha.empilhar(mapa.getIasi());
+        pilha.empilhar(mapa.getLugoj());
+        pilha.empilhar(mapa.getMehadia());
+        pilha.empilhar(mapa.getNeamt());
+        pilha.empilhar(mapa.getOradea());
+        pilha.empilhar(mapa.getPitesti());
+        pilha.empilhar(mapa.getRimnicuVilcea());
+        pilha.empilhar(mapa.getSibiu());
+        pilha.empilhar(mapa.getTimisoara());
+        pilha.empilhar(mapa.getUrziceni());
+        pilha.empilhar(mapa.getVaslui());
+        pilha.empilhar(mapa.getZerind());
         
         System.out.println(pilha.getTopo().getNome());
         

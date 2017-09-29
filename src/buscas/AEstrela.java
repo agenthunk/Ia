@@ -42,9 +42,12 @@ public class AEstrela {
 
     public static void main(String[] args) {
 
+        long inicio;
+        long fim;
+
         Scanner java = new Scanner(System.in);
         Mapa mapa = new Mapa();
-        
+
         System.out.println("Busca A Estrela");
         Mensagem.menu();
 
@@ -58,107 +61,127 @@ public class AEstrela {
                     System.exit(0);
                     break;
                 case 1:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getArad());
-                    Mensagem.separador();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
+                    break;
                 case 2:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getBucharest());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 3:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getCraiova());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 4:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getDobreta());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 5:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getEforie());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 6:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getFagaras());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 7:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getGiurgiu());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 8:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getHirsova());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 9:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getIasi());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 10:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getLugoj());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 11:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getMehadia());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 12:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getNeamt());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 13:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getOradea());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 14:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getPitesti());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 15:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getRimnicuVilcea());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 16:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getSibiu());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 17:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getTimisoara());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 18:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getUrziceni());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 19:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getVaslui());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 20:
+                    inicio = System.currentTimeMillis();
                     escolha.buscar(mapa.getZerind());
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 default:
                     System.out.println("Opção Inválida");
-                    Mensagem.separador();
-                    Mensagem.menu();
                     break;
             }
         }

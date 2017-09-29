@@ -56,10 +56,13 @@ public class Largura {
 
     public static void main(String[] args) {
         
+        long inicio;
+        long fim;
+        
         Scanner java = new Scanner(System.in);
         Mapa mapa = new Mapa();
         Mensagem.menu();
-        
+
         while (true) {
             System.out.println("Escolha uma Cidade para chegar em Bucharest ou Digite 0 para sair");
             int opcao = Integer.parseInt(java.nextLine());
@@ -70,126 +73,146 @@ public class Largura {
                     break;
                 case 1:
                     Largura a = new Largura(mapa.getArad(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     a.buscar();
-                    Mensagem.separador();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
+                    break;
                 case 2:
                     Largura b = new Largura(mapa.getBucharest(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     b.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 3:
                     Largura c = new Largura(mapa.getCraiova(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     c.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 4:
                     Largura d = new Largura(mapa.getDobreta(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     d.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 5:
                     Largura e = new Largura(mapa.getEforie(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     e.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 6:
                     Largura f = new Largura(mapa.getFagaras(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     f.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 7:
                     Largura g = new Largura(mapa.getGiurgiu(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     g.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 8:
                     Largura h = new Largura(mapa.getHirsova(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     h.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 9:
                     Largura i = new Largura(mapa.getIasi(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     i.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 10:
                     Largura l = new Largura(mapa.getLugoj(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     l.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 11:
                     Largura m = new Largura(mapa.getMehadia(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     m.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 12:
                     Largura n = new Largura(mapa.getNeamt(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     n.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 13:
                     Largura o = new Largura(mapa.getOradea(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     o.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 14:
                     Largura p = new Largura(mapa.getPitesti(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     p.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 15:
                     Largura r = new Largura(mapa.getRimnicuVilcea(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     r.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 16:
                     Largura s = new Largura(mapa.getSibiu(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     s.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 17:
                     Largura t = new Largura(mapa.getTimisoara(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     t.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 18:
                     Largura u = new Largura(mapa.getUrziceni(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     u.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 19:
                     Largura v = new Largura(mapa.getVaslui(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     v.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 20:
                     Largura z = new Largura(mapa.getZerind(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     z.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 default:
                     System.out.println("Opção Inválida");
-                    Mensagem.separador();
-                    Mensagem.menu();
                     break;
             }
         }

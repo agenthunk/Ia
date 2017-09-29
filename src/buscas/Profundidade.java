@@ -54,10 +54,12 @@ public class Profundidade {
 
     public static void main(String[] args) {
 
+        long inicio;
+        long fim;
         Mapa mapa = new Mapa();
         Scanner java = new Scanner(System.in);
         Mensagem.menu();
-        
+
         while (true) {
             System.out.println("Escolha uma Cidade para chegar em Bucharest ou Digite 0 para sair");
             int opcao = Integer.parseInt(java.nextLine());
@@ -68,126 +70,145 @@ public class Profundidade {
                     break;
                 case 1:
                     Profundidade a = new Profundidade(mapa.getArad(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     a.buscar();
-                    Mensagem.separador();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                 case 2:
                     Profundidade b = new Profundidade(mapa.getBucharest(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     b.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 3:
                     Profundidade c = new Profundidade(mapa.getCraiova(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     c.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 4:
                     Profundidade d = new Profundidade(mapa.getDobreta(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     d.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 5:
                     Profundidade e = new Profundidade(mapa.getEforie(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     e.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 6:
                     Profundidade f = new Profundidade(mapa.getFagaras(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     f.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 7:
                     Profundidade g = new Profundidade(mapa.getGiurgiu(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     g.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 8:
                     Profundidade h = new Profundidade(mapa.getHirsova(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     h.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 9:
                     Profundidade i = new Profundidade(mapa.getIasi(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     i.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 10:
                     Profundidade l = new Profundidade(mapa.getLugoj(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     l.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 11:
                     Profundidade m = new Profundidade(mapa.getMehadia(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     m.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 12:
                     Profundidade n = new Profundidade(mapa.getNeamt(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     n.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 13:
                     Profundidade o = new Profundidade(mapa.getOradea(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     o.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 14:
                     Profundidade p = new Profundidade(mapa.getPitesti(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     p.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 15:
                     Profundidade r = new Profundidade(mapa.getRimnicuVilcea(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     r.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 16:
                     Profundidade s = new Profundidade(mapa.getSibiu(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     s.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 17:
                     Profundidade t = new Profundidade(mapa.getTimisoara(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     t.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 18:
                     Profundidade u = new Profundidade(mapa.getUrziceni(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     u.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 19:
                     Profundidade v = new Profundidade(mapa.getVaslui(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     v.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 case 20:
                     Profundidade z = new Profundidade(mapa.getZerind(), mapa.getBucharest());
+                    inicio = System.currentTimeMillis();
                     z.buscar();
-                    Mensagem.separador();
-                    Mensagem.menu();
+                    fim = System.currentTimeMillis();
+                    System.out.println("Tempo de execução: " + (fim - inicio));
                     break;
                 default:
                     System.out.println("Opção Inválida");
-                    Mensagem.separador();
-                    Mensagem.menu();
                     break;
             }
         }

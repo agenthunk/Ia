@@ -72,7 +72,7 @@ public class Fila {
     }
     
     public static void main(String[] args) {
-        Fila fila = new Fila(20);
+        Fila fila = new Fila(19); // Deixando uma posição a menos para testar a pilha cheia
         Mapa mapa = new Mapa();
         
         fila.enfileirar(mapa.getArad());
